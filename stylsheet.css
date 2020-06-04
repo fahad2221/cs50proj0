@@ -1,0 +1,17 @@
+.title{
+    padding: 20px;
+    text-align: center;
+}
+
+.spacing{
+    height: auto;
+    width: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    margin-top: 100px;
+}
+
+.text{
+    text-align: center;
+}
