@@ -1,6 +1,9 @@
 .title{
-    padding-top: 40px;
     text-align: center;
+}
+
+#about-section{
+    padding-top: 40px;
 }
 
 .area{
@@ -10,18 +13,31 @@
     justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
+    background-color: teal;
+    height: fit-content;
 }
 
-.spacing{
+.text-area{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: auto;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: teal;
-    height: 200px
 }
+
+@media screen and (max-width: 600px){
+    .area{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+    }
+    .text{
+        font-size: small;
+    }
+}
+
 
 .small{
     height: 200px;
