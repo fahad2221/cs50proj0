@@ -1,49 +1,77 @@
+#title-section {
+  display: flex;
+  align-items: center;
+  background-color: lightgrey;
+  height: 10vh;
+  justify-content: center;
+}
 
-#title-section{
-    padding-top: 40px;
+.proj-area, .interest-area, .tech-area, .about-area {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  background-color: teal;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tech-area {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: papayawhip;
+}
+.tech-area li {
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.tech-area h5 {
+  text-decoration: underline;
+}
+
+.interest-area {
+  background-color: lightsteelblue;
+}
+
+.proj-area {
+  background-color: slateblue;
+}
+
+.text {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .about-area {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: column;
+  }
+
+  .text {
+    font-size: small;
+  }
+
+  #title-section {
+    height: auto;
     text-align: center;
-}
+  }
 
-.area{
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    background-color: teal;
-    height: fit-content;
-}
-
-.text-area{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .tech-area {
     width: auto;
-    padding-left: 50px;
-    padding-right: 50px;
+  }
+
+  .interest-area {
+    width: auto;
+  }
+}
+.small {
+  height: 200px;
+  width: 200px;
 }
 
-@media screen and (max-width: 600px){
-    .area{
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-        flex-direction: column;
-    }
-    .text{
-        font-size: small;
-    }
-}
-
-
-.small{
-    height: 200px;
-    width: 200px;
-}
-
-
-
-.text{
-    text-align: center;
-}
+/*# sourceMappingURL=stylsheet.css.map */
